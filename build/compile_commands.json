@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/corevoid/Desktop/projects/Namida/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -o CMakeFiles/Namida.dir/main.cc.o -c /Users/corevoid/Desktop/projects/Namida/main.cc",
+  "file": "/Users/corevoid/Desktop/projects/Namida/main.cc",
+  "output": "CMakeFiles/Namida.dir/main.cc.o"
+},
+{
+  "directory": "/Users/corevoid/Desktop/projects/Namida/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -o CMakeFiles/Namida.dir/Namida.cc.o -c /Users/corevoid/Desktop/projects/Namida/Namida.cc",
+  "file": "/Users/corevoid/Desktop/projects/Namida/Namida.cc",
+  "output": "CMakeFiles/Namida.dir/Namida.cc.o"
+}
+]
