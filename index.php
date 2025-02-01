@@ -4,11 +4,13 @@
 require_once (__DIR__.'/config.php');
 require_once (__DIR__.'/init.php');
 
-if($argc==1){
+if($argc==1)
+{
     println(HELP_TEXT);
     exit;
 }
-if(!file_exists(__DIR__.'/data')){
+if(!file_exists(__DIR__.'/data'))
+{
     mkdir(__DIR__.'/data');
 }
 switch ($argv[1]){

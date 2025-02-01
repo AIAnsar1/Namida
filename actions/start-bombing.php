@@ -1,5 +1,7 @@
 <?php
 
+global $guzzle;
+
 use GuzzleHttp\Pool;
 use GuzzleHttp\Psr7\Request;
 
@@ -85,7 +87,5 @@ $pool = new Pool($guzzle, $requests(USE_NODES_COUNT), [
         println("[SUCCESS:{$totalSuccess}, FAILURE:{$totalFailure}]".'Request with index '.$index.' failed. Reason: connection cannot be made.');
     },
 ]);
-
 $promise = $pool->promise();
-
 $promise->wait();

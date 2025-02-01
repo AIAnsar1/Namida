@@ -16,7 +16,8 @@ function pretty_json_encode($raw) {
     return json_encode($raw, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 }
 
-function println($msg) {
+function println($msg)
+{
     echo $msg . PHP_EOL;
 }
 
@@ -31,20 +32,22 @@ function generate_password($length = 8) {
 
     $password = '';
 
-    for ($i = 0; $i < $length; $i++) {
+    for ($i = 0; $i < $length; $i++)
+    {
         $password .= $chars[mt_rand(0, strlen($chars) - 1)];
-
     }
-
     return $password;
 
 }
-function parse_providers($haystack){
+function parse_providers($haystack)
+{
     preg_match_all('/http[s]{0,1}:\/\/([A-Za-z0-9\-_\/:\.]*?)\/mailman/',$haystack,$m);
     $providers=[];
-    foreach ($m[0] as $item){
+    foreach ($m[0] as $item)
+    {
         $url=$item.'/listinfo';
-        if(startsWith($url,'https://')){
+        if(startsWith($url,'https://'))
+        {
             $url='http://'.substr($url,8,strlen($url));
         }
         $providers[]=$url;
